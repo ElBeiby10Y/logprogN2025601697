@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fabrica de Donas"/>
+        <attribute name="authors" value="alexm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-22 12:54:47 p. m."/>
+        <attribute name="created" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjI7MTE6NTk6NTkgYS4gbS47MzA4Mg=="/>
+        <attribute name="edited" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjI7MTI6NTQ6NDcgcC4gbS47MjszMTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DONAS" type="Integer" array="False" size=""/>
+            <declare name="Dona" type="Integer" array="False" size=""/>
+            <assign variable="Dona" expression="10.00"/>
+            <output expression="&quot;&#191;CUANTAS DONAS COMPRASTE?&quot;" newline="True"/>
+            <input variable="DONAS"/>
+            <if expression="DONAS&lt;=30">
+                <then>
+                    <declare name="PrecioDonas" type="Integer" array="False" size=""/>
+                    <assign variable="PrecioDonas" expression="DONAS*Dona"/>
+                    <output expression="PrecioDonas" newline="True"/>
+                    <output expression="&quot;NO SE HACE DESCUENTO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="DONAS&gt;30">
+                        <then>
+                            <if expression="DONAS&gt;50">
+                                <then>
+                                    <declare name="DescB" type="Real" array="False" size=""/>
+                                    <assign variable="DescB" expression="DONAS*Dona-DONAS*Dona*.2"/>
+                                    <output expression="DescB" newline="True"/>
+                                    <output expression="&quot;PAGO TOTAL&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <declare name="Descuento" type="Real" array="False" size=""/>
+                                    <assign variable="Descuento" expression="DONAS*Dona-DONAS*Dona*.1"/>
+                                    <output expression="Descuento" newline="True"/>
+                                    <output expression="&quot;TOTAL A PAGAR&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
