@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Grupo A y B"/>
+        <attribute name="authors" value="alexm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 06:48:27 p. m."/>
+        <attribute name="created" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjc7MDY6MTU6NDIgcC4gbS47MzA5MA=="/>
+        <attribute name="edited" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjc7MDY6NDg6MjcgcC4gbS47MTszMjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Inicial" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;CUAL ES TU INICIAL?&quot;" newline="True"/>
+            <input variable="Inicial"/>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Cual es tu sexo?&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <if expression="Inicial&lt;=&quot;M&quot;&#13;&#10;AND &#13;&#10;Sexo==&quot;Mujer&quot;&#13;&#10;OR&#13;&#10;Inicial&gt;=&quot;N&quot;&#13;&#10;AND&#13;&#10;Sexo==&quot;Hombre&quot;">
+                <then>
+                    <output expression="&quot;GRUPO A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;GRUPO B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

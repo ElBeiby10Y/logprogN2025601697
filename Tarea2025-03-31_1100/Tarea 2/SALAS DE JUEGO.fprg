@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SALAS DE JUEGO"/>
+        <attribute name="authors" value="alexm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 04:17:20 p. m."/>
+        <attribute name="created" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjY7MDQ6MDI6MTcgcC4gbS47MzA4NQ=="/>
+        <attribute name="edited" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDMtMjY7MDQ6MTc6MjAgcC4gbS47MTszMTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EDAD" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;QUE EDAD TIENES?&quot;" newline="True"/>
+            <input variable="EDAD"/>
+            <if expression="EDAD&lt;=4">
+                <then>
+                    <output expression="&quot;ENTRADA GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="EDAD&lt;=18">
+                        <then>
+                            <output expression="&quot;PRECIO DE ENTRADA ES DE $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="EDAD&gt;18">
+                                <then>
+                                    <output expression="&quot;PRECIO DE ENTRADA ES DE $500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
