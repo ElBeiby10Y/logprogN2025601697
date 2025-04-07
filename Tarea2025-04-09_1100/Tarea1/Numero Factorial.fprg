@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Numero Factorial"/>
+        <attribute name="authors" value="alexm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 02:33:08 p. m."/>
+        <attribute name="created" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDQtMDU7MDQ6NDQ6MTAgcC4gbS47MzA4Mg=="/>
+        <attribute name="edited" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDQtMDc7MDI6MzM6MDggcC4gbS47MjszMTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce un numero para conocer su factorial&quot;" newline="True"/>
+            <input variable="numero"/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="&quot;Dado el numero &quot;&amp;numero&amp;&quot; su Factorial es: &quot;&amp;factorial&amp;&quot; &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

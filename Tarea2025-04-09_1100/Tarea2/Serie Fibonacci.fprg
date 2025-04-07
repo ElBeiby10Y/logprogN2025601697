@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Serie Fibonacci"/>
+        <attribute name="authors" value="alexm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 01:59:34 p. m."/>
+        <attribute name="created" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDQtMDU7MDQ6MTQ6MjQgcC4gbS47MzA4NA=="/>
+        <attribute name="edited" value="YWxleG07REVTS1RPUC1FVkdVTzY5OzIwMjUtMDQtMDc7MDE6NTk6MzQgcC4gbS47MzszMjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i" type="Integer" array="False" size=""/>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="2"/>
+            <assign variable="z" expression="1"/>
+            <output expression="&quot;Introduzca el numero de digitos que apareceran en la pantalla&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="z" expression="x+y"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+                <output expression="z" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
